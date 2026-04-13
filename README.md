@@ -1,12 +1,13 @@
-# Vape Vend Network
+# CloudCastle
 
-Automated vending infrastructure for compliant vape distribution.
+CloudCastle is a next-generation automated retail infrastructure platform focused on
+secure, scalable, and compliant distribution networks.
 
 ## Features
 - Operator dashboard
-- Machine tracking
+- Machine network tracking
 - Revenue visibility
-- Deployment-ready frontend
+- Scalable deployment foundation
 
 ## Run
 npm run dev

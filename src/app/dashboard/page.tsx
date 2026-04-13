@@ -1,13 +1,13 @@
 const machines = [
-  { id: "VV-001", location: "Bar A", revenue: 1240, status: "Active" },
-  { id: "VV-002", location: "Club B", revenue: 980, status: "Active" },
-  { id: "VV-003", location: "Lounge C", revenue: 430, status: "Low Activity" },
+  { id: "CC-001", location: "Downtown Bar", revenue: 1420, status: "Active" },
+  { id: "CC-002", location: "Nightclub District", revenue: 980, status: "Active" },
+  { id: "CC-003", location: "Lounge Venue", revenue: 410, status: "Low Activity" },
 ];
 
 export default function Dashboard() {
   return (
     <main className="min-h-screen bg-[#050505] text-white p-8">
-      <h1 className="text-4xl font-bold mb-6">Network Dashboard</h1>
+      <h1 className="text-4xl font-bold mb-6">CloudCastle Network</h1>
 
       <div className="grid gap-6 md:grid-cols-3">
         {machines.map((m) => (

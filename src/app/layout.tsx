@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VVN | Vape Vending Network",
-  description: "Nationwide vape vending infrastructure built for compliance, automation, and scale.",
+  title: "CloudCastle | Automated Retail Infrastructure",
+  description:
+    "CloudCastle builds automated retail infrastructure for controlled distribution environments, combining compliance, smart vending, and scalable network operations.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
