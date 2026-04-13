@@ -1,16 +1,25 @@
 # CloudCastle
 
-CloudCastle is a next-generation automated retail infrastructure platform focused on
-secure, scalable, and compliant distribution networks.
+CloudCastle is an automated retail infrastructure platform with a premium market-facing site,
+operator dashboard shell, and Supabase-ready data foundation.
 
-## Features
-- Operator dashboard
-- Machine network tracking
-- Revenue visibility
-- Scalable deployment foundation
+## Stack
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Supabase SSR utilities
 
-## Run
+## Environment
+Copy `.env.example` to `.env.local` and fill in:
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+- SUPABASE_SERVICE_ROLE_KEY
+
+## Development
 npm run dev
 
 ## Build
 npm run build
+
+## Database
+Run the SQL in `supabase/schema.sql` inside your Supabase SQL editor.
