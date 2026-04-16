@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start", 
-    "lint": "eslint"
+    "build": "next build && next postbuild",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "clean": "rm -rf .next && rm -rf node_modules/.cache",
+    "typecheck": "tsc --noEmit"
   },
   "turbopack": {
     "root": "."
