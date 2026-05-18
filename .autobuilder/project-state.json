@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/cloudcastle",
+  "startup_name": "CloudCastle",
+  "last_updated": "2026-05-10T12:00:00Z",
+  "status": "ready",
+  "build_status": {
+    "pnpm_install": "pass",
+    "lint": "pass",
+    "typecheck": "pass",
+    "build": "pass",
+    "last_error": ""
+  },
+  "deploy_status": {
+    "vercel_ready": true,
+    "last_deployed": "",
+    "deployment_url": "",
+    "manual_deploy_command": "cd /Users/joshuadavis/startups/cloudcastle && pnpm install && pnpm build && vercel --prod"
+  },
+  "disk_status": {
+    "size_before": "~464M",
+    "size_after": "~2.3M",
+    "cleanup_performed": true,
+    "large_files_flagged": ["Prior scan: single >25M file was Next SWC binary inside node_modules (expected)."]
+  },
+  "recent_changes": [
+    "Relocated /api/checkout to src/app; removed root app/ so src/app routes register",
+    "Homepage: PremiumHero, SignalStrip, metrics, surfaces, showcase, portfolio, flywheel",
+    "Metadata, .gitignore, package rename, recovery + foundation JSON updates",
+    "Post-build disk cleanup (node_modules, .next, caches)"
+  ],
+  "open_issues": [],
+  "next_actions": [
+    "Run pnpm install before next dev session",
+    "Set NEXT_PUBLIC_SITE_URL for canonical OG URLs on deploy"
+  ],
+  "last_agent_notes": "After cleanup, run pnpm install && pnpm build locally before shipping."
+}

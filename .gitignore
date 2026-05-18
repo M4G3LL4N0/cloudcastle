@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -11,14 +11,17 @@
 !.yarn/versions
 
 # testing
-/coverage
+coverage
+test-results
+playwright-report
 
 # next.js
-/.next/
-/out/
+.next
+out
 
 # production
-/build
+dist
+build
 
 # misc
 .DS_Store
@@ -28,14 +31,66 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files (keep .env.example tracked)
+.env
+.env.local
+.env.*.local
 
 # vercel
 .vercel
 
+# turbo / caches
+.turbo
+.cache
+.parcel-cache
+
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# logs
+*.log
+
+# other lockfiles when using pnpm
+package-lock.json
+yarn.lock
+bun.lockb
+
+# local tooling / IDE
+.aider*
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# --- portfolio private sync ---
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+.vercel/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+.local/
+tmp/
+temp/
+

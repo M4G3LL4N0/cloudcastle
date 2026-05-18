@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/cloudcastle",
+  "startup_name": "CloudCastle",
+  "generated_at": "2026-05-10T00:00:00Z",
+  "tasks": [
+    {
+      "id": "task-001",
+      "priority": "high",
+      "type": "engineering",
+      "title": "Keep pnpm build clean",
+      "description": "Fix all TSX/import/build errors and preserve all intended routes.",
+      "files_likely_involved": ["src/app", "src/components", "package.json"],
+      "success_criteria": ["pnpm build passes", "no corrupted TSX", "routes render"],
+      "risk_level": "medium",
+      "estimated_effort": "medium",
+      "blocked_by": []
+    },
+    {
+      "id": "task-002",
+      "priority": "high",
+      "type": "design",
+      "title": "Upgrade premium homepage continuity",
+      "description": "Make the homepage feel like one coordinated premium system, not stacked sections.",
+      "files_likely_involved": ["src/app/page.tsx", "src/components/premium", "src/app/globals.css"],
+      "success_criteria": ["hero polished", "mid-page rich", "footer complete", "mobile responsive"],
+      "risk_level": "low",
+      "estimated_effort": "medium",
+      "blocked_by": []
+    },
+    {
+      "id": "task-003",
+      "priority": "medium",
+      "type": "copy",
+      "title": "Sharpen operator and investor copy",
+      "description": "Make copy clearer, more premium, and less generic.",
+      "files_likely_involved": ["src/app/page.tsx", "src/app/network/page.tsx", "src/app/operators/page.tsx", "src/app/launch/page.tsx"],
+      "success_criteria": ["clear positioning", "strong CTA", "no generic filler"],
+      "risk_level": "low",
+      "estimated_effort": "small",
+      "blocked_by": []
+    },
+    {
+      "id": "task-004",
+      "priority": "medium",
+      "type": "seo",
+      "title": "Add SEO and social metadata",
+      "description": "Improve metadata, OpenGraph, Twitter cards, and page descriptions.",
+      "files_likely_involved": ["src/app/layout.tsx", "public"],
+      "success_criteria": ["metadata complete", "social image path prepared", "no broken asset references"],
+      "risk_level": "low",
+      "estimated_effort": "small",
+      "blocked_by": []
+    },
+    {
+      "id": "task-005",
+      "priority": "medium",
+      "type": "cleanup",
+      "title": "Keep folder lean after build validation",
+      "description": "Remove generated local artifacts and duplicate lockfiles while preserving source and project memory.",
+      "files_likely_involved": [".gitignore", "RECOVERY_NOTES.md", ".autobuilder/project-state.json"],
+      "success_criteria": ["node_modules removed if cleanup requested", ".next removed after validation", "pnpm-lock preserved", "size reported"],
+      "risk_level": "medium",
+      "estimated_effort": "small",
+      "blocked_by": []
+    }
+  ]
+}

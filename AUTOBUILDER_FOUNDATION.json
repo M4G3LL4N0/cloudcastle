@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "/Users/joshuadavis/startups/cloudcastle",
+  "startup_name": "CloudCastle",
+  "aliases": ["Cloud Castle"],
+  "domain": "",
+  "category": "automated retail infrastructure",
+  "stage": "demo_ready",
+  "one_line_description": "Premium automated retail infrastructure and operator command layer for controlled venue machine networks.",
+  "target_users": ["venue operators", "hospitality groups", "machine-network operators", "investors"],
+  "core_problem": "Automated retail machine networks are fragmented, visually underpowered, operationally opaque, and hard to present as scalable infrastructure.",
+  "core_solution": "A premium multi-page website and operator dashboard foundation that presents CloudCastle as a software-defined command layer for machine networks.",
+  "differentiation": "CloudCastle combines premium venture-grade presentation with operator-grade network visibility instead of looking like a generic vending website.",
+  "mvp_scope": {
+    "primary_goal": "Build a production-ready demo site with premium homepage, dashboard, network, operators, and launch pages.",
+    "included_features": ["premium homepage", "operator dashboard shell", "network architecture page", "operator strategy page", "launch/pilot page", "mock data"],
+    "excluded_for_now": ["real payment processing", "automatic deployment", "production auth", "unverified compliance automation"],
+    "future_features": ["protected operator accounts", "real machine telemetry", "venue CRM", "Supabase-backed dashboard", "pilot request workflow"]
+  },
+  "website": {
+    "primary_message": "CloudCastle is the premium command layer for automated retail machine networks.",
+    "tone": "premium, confident, infrastructure-focused, investor-ready",
+    "routes": ["/", "/dashboard", "/network", "/operators", "/launch"],
+    "sections": ["hero", "metrics", "system showcase", "surface architecture", "portfolio showcase", "growth flywheel", "footer"],
+    "cta": "Launch a Market",
+    "seo_keywords": ["automated retail infrastructure", "smart vending network", "operator dashboard", "venue machine network", "retail infrastructure"]
+  },
+  "product": {
+    "core_flows": ["visitor learns positioning", "operator views launch CTA", "stakeholder reviews dashboard shell", "founder demos network vision"],
+    "demo_flows": ["homepage to launch", "homepage to dashboard", "network architecture review"],
+    "data_model_notes": ["venues", "machines", "operators", "machine events", "revenue metrics"],
+    "auth_required": false,
+    "database_required": false,
+    "api_required": false
+  },
+  "design_system": {
+    "visual_style": "dark cinematic premium glass interface with glowing gradients and system visuals",
+    "colors": ["near-black", "deep navy", "cyan", "blue", "orange", "violet", "white"],
+    "typography": "large premium sans-serif hierarchy with tight tracking and clear body copy",
+    "layout_principles": ["large hero", "glass panels", "responsive cards", "clear hierarchy", "cinematic spacing"],
+    "animation_style": "subtle fade and hover interactions only",
+    "avoid": ["generic SaaS blue template", "cheap vending-machine look", "clutter", "over-animation", "compliance claims"]
+  },
+  "technical_stack": {
+    "framework": "Next.js",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS",
+    "package_manager": "pnpm",
+    "deployment": "Vercel",
+    "database": "optional Supabase later",
+    "auth": "optional later",
+    "apis": ["/api/checkout", "/api/venues", "/api/machines"]
+  },
+  "important_files": {
+    "routes": ["src/app/page.tsx", "src/app/dashboard/page.tsx", "src/app/network/page.tsx", "src/app/operators/page.tsx", "src/app/launch/page.tsx"],
+    "components": ["src/components/NavBar.tsx", "src/components/site/Footer.tsx", "src/components/MetricCard.tsx", "src/components/SectionHeader.tsx", "src/components/premium"],
+    "lib": ["src/lib"],
+    "data": ["src/data/mock.ts"],
+    "public_assets": ["public/art"],
+    "config": ["package.json", "pnpm-lock.yaml", "next.config.*", "tsconfig.json", "postcss.config.*", ".gitignore"]
+  },
+  "preserve": {
+    "copy": ["CloudCastle positioning", "premium command layer language", "operator dashboard framing"],
+    "features": ["multi-page site", "dashboard shell", "network page", "launch page"],
+    "components": ["premium components", "NavBar", "Footer", "MetricCard", "SectionHeader"],
+    "assets": ["used public/art assets"],
+    "technical_decisions": ["Next.js App Router", "TypeScript", "Tailwind", "pnpm", "manual Vercel deploy"]
+  },
+  "do_not": {
+    "delete": ["src", "public assets used by code", "package.json", "pnpm-lock.yaml", ".env.example", ".env.local", "RECOVERY_NOTES.md", "AUTOBUILDER_FOUNDATION.json", ".autobuilder"],
+    "expose_publicly": ["internal Autobuilder automation details", "private founder info", "unverified compliance claims", "secret keys"],
+    "change_without_reason": ["startup name", "route structure", "package manager", "design direction"],
+    "build": ["generic SaaS clone", "unrelated marketplace", "other startup concept", "public nicotine compliance workflow"],
+    "drift_toward": ["generic vending machine website", "basic dashboard template", "Noaerth copy-paste clone", "unrelated venture studio page"]
+  },
+  "autobuilder_strategy": {
+    "north_star": "Make CloudCastle feel like a premium, investor-ready infrastructure company with a usable operator command foundation.",
+    "quality_bar": "Noaerth/Oddbotix-level polish, clean build, no broken routes, no generic filler.",
+    "next_priorities": ["fix build", "stabilize premium UI", "improve dashboard demo data", "add SEO/social metadata", "prepare manual deploy"],
+    "safe_improvement_types": ["visual polish", "copy clarity", "responsive design", "mock dashboard refinement", "documentation", "cleanup"],
+    "unsafe_improvement_types": ["automatic deployment", "npm migration", "removing routes", "adding compliance-risk sales flows", "exposing secrets"],
+    "preferred_task_size": "medium",
+    "build_frequency_guidance": "Run pnpm build after meaningful source changes.",
+    "deployment_guidance": "manual_vercel_only"
+  },
+  "cleanup_policy": {
+    "safe_to_delete": ["node_modules", ".next", ".turbo", ".vercel/cache", "dist", "build", "coverage", "test-results", "playwright-report", ".cache", "*.log", ".DS_Store", "package-lock.json", "yarn.lock", "bun.lockb"],
+    "must_preserve": ["src", "public assets used by code", "package.json", "pnpm-lock.yaml", ".env.example", ".env.local", "README.md", "RECOVERY_NOTES.md", "AUTOBUILDER_FOUNDATION.json", ".autobuilder", ".git", ".gitignore"],
+    "large_file_review_paths": ["public", "assets", "media", "content", "data", "docs", ".autobuilder"],
+    "post_build_cleanup_commands": ["rm -rf node_modules .next .turbo .vercel/cache dist build coverage playwright-report test-results .cache .parcel-cache", "find . -name '.DS_Store' -type f -delete", "find . -name '*.log' -type f -delete"]
+  },
+  "last_recovery_summary": {
+    "date": "2026-05-10",
+    "restored": ["All App Router pages under src/app now build (removed conflicting root app/; checkout API lives in src/app/api/checkout)."],
+    "improved": ["Homepage now composes PremiumHero, SignalStrip, metrics, surface grid, system showcase, portfolio section, flywheel.", "Root layout metadata extended (OpenGraph, Twitter, keywords).", "package.json renamed to cloudcastle.", "Copy tightened on network, launch, dashboard, operators pages."],
+    "fixed": ["Next.js was only registering root app/api/checkout; src routes were ignored until root app/ removed.", ".gitignore no longer ignores .env.example via blanket .env*."],
+    "removed": ["Root app/ directory after relocating checkout route to src."],
+    "remaining_risks": ["Supabase API routes require valid env for live calls; mobile nav is desktop-first.", "pnpm may ignore dependency build scripts until approved (e.g. sharp)."]
+  }
+}

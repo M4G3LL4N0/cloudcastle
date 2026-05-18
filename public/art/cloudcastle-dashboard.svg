@@ -1,0 +1,55 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="32" fill="#0A1221"/>
+  <rect width="1200" height="860" rx="32" fill="url(#bg)"/>
+  <g opacity="0.55" filter="url(#blur1)">
+    <ellipse cx="196" cy="140" rx="260" ry="170" fill="#507CFF"/>
+  </g>
+  <g opacity="0.55" filter="url(#blur2)">
+    <ellipse cx="1010" cy="144" rx="240" ry="160" fill="#FF966A"/>
+  </g>
+  <rect x="92" y="108" width="1016" height="644" rx="28" fill="url(#shell)" stroke="rgba(255,255,255,0.16)"/>
+  <rect x="132" y="154" width="470" height="124" rx="24" fill="#121E33" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="628" y="154" width="438" height="124" rx="24" fill="#121E33" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="132" y="310" width="934" height="192" rx="28" fill="#0D1526" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="132" y="534" width="292" height="168" rx="24" fill="#121E33" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="454" y="534" width="292" height="168" rx="24" fill="#121E33" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="776" y="534" width="290" height="168" rx="24" fill="#121E33" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="168" y="196" width="180" height="18" rx="9" fill="#F1F5FB" fill-opacity="0.9"/>
+  <rect x="168" y="226" width="280" height="14" rx="7" fill="#B7C6DF" fill-opacity="0.4"/>
+  <rect x="666" y="196" width="144" height="18" rx="9" fill="#F1F5FB" fill-opacity="0.9"/>
+  <rect x="666" y="226" width="246" height="14" rx="7" fill="#B7C6DF" fill-opacity="0.4"/>
+  <rect x="182" y="450" width="34" height="24" rx="8" fill="#4DE1D2"/>
+  <rect x="232" y="418" width="34" height="56" rx="8" fill="#4A8CFF"/>
+  <rect x="282" y="386" width="34" height="88" rx="8" fill="#6DB3FF"/>
+  <rect x="332" y="360" width="34" height="114" rx="8" fill="#FF8D64"/>
+  <rect x="382" y="324" width="34" height="150" rx="8" fill="#4A8CFF"/>
+  <rect x="432" y="286" width="34" height="188" rx="8" fill="#52E5D7"/>
+  <path d="M556 432C632 386 682 358 738 354C784 352 836 374 920 438" stroke="url(#line)" stroke-width="5"/>
+  <circle cx="556" cy="432" r="10" fill="#FF8D64"/>
+  <circle cx="654" cy="380" r="10" fill="#4A8CFF"/>
+  <circle cx="744" cy="356" r="10" fill="#52E5D7"/>
+  <circle cx="836" cy="382" r="10" fill="#7AB7FF"/>
+  <circle cx="920" cy="438" r="10" fill="#FF8D64"/>
+  <defs>
+    <linearGradient id="bg" x1="76" y1="48" x2="1128" y2="794" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1426"/>
+      <stop offset="0.5" stop-color="#172A4F"/>
+      <stop offset="1" stop-color="#26203E"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="92" y1="108" x2="1108" y2="752" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2C4E"/>
+      <stop offset="1" stop-color="#11192A"/>
+    </linearGradient>
+    <linearGradient id="line" x1="556" y1="432" x2="920" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A8CFF"/>
+      <stop offset="0.5" stop-color="#9DC0FF"/>
+      <stop offset="1" stop-color="#FF8D64"/>
+    </linearGradient>
+    <filter id="blur1" x="-264" y="-230" width="920" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <filter id="blur2" x="570" y="-216" width="880" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+  </defs>
+</svg>

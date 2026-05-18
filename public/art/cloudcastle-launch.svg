@@ -1,0 +1,54 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="32" fill="#09111E"/>
+  <rect width="1200" height="860" rx="32" fill="url(#bg)"/>
+  <g opacity="0.6" filter="url(#blur1)">
+    <ellipse cx="280" cy="184" rx="260" ry="170" fill="#4F7BFF"/>
+  </g>
+  <g opacity="0.55" filter="url(#blur2)">
+    <ellipse cx="946" cy="154" rx="246" ry="154" fill="#FF9067"/>
+  </g>
+  <rect x="112" y="144" width="976" height="576" rx="32" fill="url(#frame)" stroke="rgba(255,255,255,0.16)"/>
+  <rect x="164" y="208" width="270" height="448" rx="28" fill="#0F1B30" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="466" y="208" width="570" height="144" rx="28" fill="#0F1B30" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="466" y="382" width="570" height="274" rx="28" fill="#0B1322" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="204" y="260" width="190" height="18" rx="9" fill="#F1F6FB" fill-opacity="0.88"/>
+  <rect x="204" y="294" width="138" height="14" rx="7" fill="#B6C4DB" fill-opacity="0.4"/>
+  <rect x="204" y="356" width="44" height="44" rx="12" fill="#27425F"/>
+  <rect x="264" y="356" width="44" height="44" rx="12" fill="#32587A"/>
+  <rect x="324" y="356" width="44" height="44" rx="12" fill="#27425F"/>
+  <rect x="204" y="428" width="190" height="122" rx="22" fill="url(#buttonGlow)"/>
+  <rect x="506" y="254" width="184" height="18" rx="9" fill="#F1F6FB" fill-opacity="0.88"/>
+  <rect x="506" y="288" width="280" height="14" rx="7" fill="#B6C4DB" fill-opacity="0.4"/>
+  <path d="M544 606C618 554 670 524 726 522C774 520 832 544 944 612" stroke="url(#line)" stroke-width="5"/>
+  <circle cx="544" cy="606" r="11" fill="#4A8CFF"/>
+  <circle cx="666" cy="546" r="11" fill="#6DDDD3"/>
+  <circle cx="754" cy="530" r="11" fill="#90B6FF"/>
+  <circle cx="852" cy="558" r="11" fill="#FFA071"/>
+  <circle cx="944" cy="612" r="11" fill="#4A8CFF"/>
+  <defs>
+    <linearGradient id="bg" x1="76" y1="46" x2="1130" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1527"/>
+      <stop offset="0.5" stop-color="#182C52"/>
+      <stop offset="1" stop-color="#2C2240"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="112" y1="144" x2="1088" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182A4A"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="buttonGlow" x1="204" y1="428" x2="394" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A61"/>
+      <stop offset="1" stop-color="#B55CFF"/>
+    </linearGradient>
+    <linearGradient id="line" x1="544" y1="606" x2="944" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A8CFF"/>
+      <stop offset="0.52" stop-color="#9AC2FF"/>
+      <stop offset="1" stop-color="#FF8E65"/>
+    </linearGradient>
+    <filter id="blur1" x="-180" y="-186" width="920" height="740" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+    <filter id="blur2" x="500" y="-200" width="892" height="708" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="100"/>
+    </filter>
+  </defs>
+</svg>
