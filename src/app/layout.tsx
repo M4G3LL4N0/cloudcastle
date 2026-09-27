@@ -1,7 +1,5 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import NavBar from "@/components/NavBar"
-import Footer from "@/components/site/Footer"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 const metadataBase =
@@ -12,11 +10,19 @@ const description =
   "CloudCastle is premium automated retail infrastructure and an operator command layer for controlled venue machine networks—launch surfaces, portfolio visibility, and investor-grade presentation."
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2" },
+      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png?v=2" }],
+  },
   ...(metadataBase ? { metadataBase } : {}),
   title: {
     default: title,
     template: "%s | CloudCastle",
   },
+  manifest: "/site.webmanifest?v=2",
   description,
   keywords: [
     "automated retail infrastructure",
@@ -49,16 +55,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="premium-motion">
       <body>
-        <div className="site-chrome">
-          <div className="site-grid" />
-          <div className="site-noise" />
-          <div className="site-vignette" />
-          <NavBar />
-          {children}
-          <Footer />
-        </div>
+        {children}
       </body>
     </html>
   )
