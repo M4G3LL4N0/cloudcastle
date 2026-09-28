@@ -74,6 +74,24 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+            <div className="mt-5 rounded-2xl border border-cyan-200/15 bg-cyan-200/5 p-4">
+              <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/70">
+                Venue cluster — labeled shell
+              </p>
+              <div className="mt-3 grid grid-cols-4 gap-2">
+                {["Lobby", "Concourse", "Mezz", "Back"].map((room) => (
+                  <div
+                    key={room}
+                    className="rounded-xl border border-white/10 px-2 py-3 text-center"
+                  >
+                    <div className="mx-auto h-6 w-6 rounded-md bg-cyan-200/30" />
+                    <p className="mt-2 text-[10px] uppercase tracking-[0.12em] text-slate-400">
+                      {room}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </aside>
         </section>
 
