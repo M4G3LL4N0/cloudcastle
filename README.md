@@ -1,149 +1,95 @@
-# CloudCastle
+# cloudcastle
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/hero-light.svg">
-    <img src="assets/hero/hero-motion.svg" alt="CloudCastle — animated project plate showing request &rarr; authenticate &rarr; authorise &rarr; record &rarr; reject. Motion depicts this project's real state transition." width="100%">
-  </picture>
-</p>
+> Premium distribution for modern retail. Built in Supabase. 21 routes (/about, /api/checkout, /api/machines); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
-    <img src="assets/hero/computational-motion.svg" alt="State machine: request &rarr; authenticate &rarr; authorise &rarr; record &rarr; reject." width="100%">
-  </picture>
-</p>
+The implementation summary below is intentionally conservative. Claims from NORTHSTAR are not presented as shipped functionality.
 
-CloudCastle is an automated retail infrastructure platform with a premium market-facing site,
-operator dashboard shell, and Supabase-ready data foundation.
+- [GitHub repository](https://github.com/M4G3LL4N0/cloudcastle)
+- [Project site](https://cloudcastle-beta.vercel.app)
 
-## Stack
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- Supabase SSR utilities
+<!-- NOAERTH_IMAGE_SLOT: cloudcastle/hero -->
 
-## Environment
-Copy `.env.example` to `.env.local` and fill in:
-- NEXT_PUBLIC_SUPABASE_URL
-- NEXT_PUBLIC_SUPABASE_ANON_KEY
-- SUPABASE_SERVICE_ROLE_KEY
+## What it is
 
-## Development
-npm run dev
+Premium distribution for modern retail. Built in Supabase. 21 routes (/about, /api/checkout, /api/machines); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-## Build
-npm run build
+This repository is part of the NOAERTH venture ecosystem. The current public-facing evidence identifies it as a prototype / active development rather than a production-ready system.
 
-## Database
-Run the SQL in `supabase/schema.sql` inside your Supabase SQL editor.
+## Capabilities
 
-<!-- TRILLIONX:presentation:begin -->
+### Available evidence
 
-### Animated surfaces
+- The repository contains the implementation and documentation associated with the project description above.
+- The technology signals currently visible in the local project are listed in the technical notes below.
+- No additional capability is asserted here without a direct implementation reference.
 
-Generated from this repository's own source tree: every count, route and module below was measured, not written by hand.
+### Experimental or planned
 
-#### Identity
+Roadmap intent is deliberately not represented as shipped functionality. Review NORTHSTAR and source implementation together before adding future-facing claims.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/hero-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/hero-light.svg">
-  <img alt="Identity diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/hero-motion.svg">
-</picture>
+<!-- NOAERTH_IMAGE_SLOT: cloudcastle/workflow -->
 
-#### Entry points
+## How it works
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/terminal-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/terminal-light.svg">
-  <img alt="Entry points diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/terminal-motion.svg">
-</picture>
+The current evidence supports a repository-level application or tool workflow, but does not provide enough verified detail in the Part 1 record to publish a component-level architecture diagram. The architecture slot is reserved for a deterministic diagram after the source flow is reviewed.
 
-#### Modules
+<!-- NOAERTH_IMAGE_SLOT: cloudcastle/architecture -->
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/architecture-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/architecture-light.svg">
-  <img alt="Modules diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/architecture-motion.svg">
-</picture>
+## Quick start
 
-#### Routes
+### Prerequisites
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/data_flow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/data_flow-light.svg">
-  <img alt="Routes diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/data_flow-motion.svg">
-</picture>
+- A runtime suitable for `Node.js`.
+- A clean checkout of this repository.
 
-#### Primitives
+### Install
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/state_machine-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/state_machine-light.svg">
-  <img alt="Primitives diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/state_machine-motion.svg">
-</picture>
+```sh
+pnpm install
+```
 
-#### Composition
+### Run locally
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/component_map-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/component_map-light.svg">
-  <img alt="Composition diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/component_map-motion.svg">
-</picture>
+```sh
+pnpm run dev
+```
 
-#### Build and tests
+### Build
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/build-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/build-light.svg">
-  <img alt="Build and tests diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/build-motion.svg">
-</picture>
+```sh
+pnpm run build
+```
 
-#### Workflow
+Commands are included only when they were detected in the repository manifest; verify environment-specific requirements before deployment.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/workflow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/workflow-light.svg">
-  <img alt="Workflow diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/workflow-motion.svg">
-</picture>
+## Technical notes
 
-#### Domain
+- **Primary language:** JavaScript/TypeScript
+- **Runtime:** Node.js
+- **Package manager:** pnpm
+- **Framework and integration signals:** Go, Next.js, Rust, Supabase, Tailwind
+- **Entry-point signals:** package.json
+- **Test evidence:** TEST_PLAN.md
+- **Repository topics:** `react`, `typescript`, `app`, `components`, `dung30n5`, `next-js`, `noaerth`, `pipeline`
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/domain-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/domain-light.svg">
-  <img alt="Domain diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/domain-motion.svg">
-</picture>
+## Status and roadmap
 
-#### Identity object
+**Current status:** Prototype / active development.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/footer-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/footer-light.svg">
-  <img alt="Identity object diagram for cloudcastle" src="https://raw.githubusercontent.com/M4G3LL4N0/cloudcastle/main/.github-art/surfaces/footer-motion.svg">
-</picture>
+**Current:** The repository and its documented implementation are available for inspection.
 
-<!-- TRILLIONX:presentation:end -->
+**Next:** Reconcile the README, source behavior, and safe public product language before adding deeper examples or diagrams.
 
-<!-- TRILLIONX:evidence:begin -->
+**Future:** Product direction is maintained separately and must not be read as a shipped feature list.
 
-## What is measurable here
+## Contributing and license
 
-Generated by `.github-art` from the source tree at publish time.
+Follow the repository's existing contribution and licensing files where present. This README does not invent an open-source license or contribution policy.
 
-| Signal | Value |
-| --- | --- |
-| HTTP routes | 21 |
-| Entry points | 1 |
-| Module roots | 5 |
-| Test files | 0 |
-| CI workflows | 0 |
-| Distinctive stack | Supabase |
-| Status | PROTOTYPE |
-| Evidence confidence | E3 |
-| Animated surfaces | 10 |
+## Visual documentation
 
-<!-- TRILLIONX:evidence:end -->
+Image slots are intentionally comments until authentic screenshots, deterministic diagrams, or approved conceptual visuals exist. No absent image file is referenced.
+
+## NOAERTH
+
+[NOAERTH](https://www.noaerth.com) is the venture ecosystem associated with this project.
